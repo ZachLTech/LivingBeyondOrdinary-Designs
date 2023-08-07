@@ -1,0 +1,49 @@
+  :root{
+    --text: #ebf1ff;
+    --background: #0c3127;
+    --primary: #7f894a;
+    --secondary: #ebffee;
+    --accent: #ebf1ff;
+    --box: #173a32;
+    --textsecondary: rgb(236, 236, 186); 
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Tilt+Prism&display=swap');
+  @font-face {
+    font-family: Aspect;
+    src: url("assets/AspectRangeDemoRegular-2O29W.otf") format("opentype");
+  }
+
+  body{
+    overflow-x: hidden;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 100px;
+    gap: 300px;
+  }
+  section {
+    width: 450px;
+    height: 450px;
+    border: solid rgba(0,0,0,0.35) 1px;
+    border-radius: 100%;
+  }
+  div{
+    width: 300px;
+    height: 300px;
+    background: var(--box);
+    transform: translate(-50px, -50px);
+  }
+  span{
+    color: var(--text);
+    font-family: Aspect;
+    font-size: 3.4em;
+    letter-spacing: 0.4rem;
+  }
+  #o{
+    color: var(--primary);
+    background: -webkit-linear-gradient(var(--textsecondary), var(--primary) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
